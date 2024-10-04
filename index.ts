@@ -9,7 +9,7 @@ const api = await ApiPromise.create({
 	// Note: No extra type needed since the TAssetConversion is by default an Option<MultiLocation>
 });
 
-// Dummy account with some funds on the Testnet
+// Dummy account with enough USDC (1337) on the Testnet
 const keyring = new Keyring({ type: 'sr25519' });
 const sender = keyring.addFromMnemonic(
 	'arrest kitten athlete dumb polar poet figure oppose valley acquire decline giggle',
