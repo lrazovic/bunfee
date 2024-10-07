@@ -16,7 +16,7 @@ const sender = keyring.addFromMnemonic(
 );
 
 const inputAsset = (assetId: number) =>
-  api.createType('MultiLocation', {
+  api.createType('MultiLocationV3', {
     parents: 1,
     interior: {
       x3: [
